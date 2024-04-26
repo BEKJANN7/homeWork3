@@ -1,0 +1,274 @@
+@font-face {
+	font-family: Ubuntu;
+	font-weight: 400;
+	src: url(../fonts/Ubuntu-Regular.ttf);
+}
+
+* {
+	font-family: Ubuntu;
+}
+
+.overflowHidden {
+	overflow: hidden;
+}
+
+.visible {
+	display: block !important;
+}
+
+body {
+	margin: 0;
+	margin: auto;
+}
+
+.container {
+	width: 1230px;
+	margin: auto;
+}
+.headerWrapper {
+	position: sticky;
+	top: 0.1px;
+	background-color: #fff;
+}
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.navbar {
+	display: flex;
+}
+.navbar p {
+	margin-right: 40px;
+}
+.contacts {
+	display: flex;
+}
+.contactsItem {
+	display: flex;
+	margin-left: 36px;
+}
+.contactsInfo {
+	margin-left: 12px;
+}
+.contactsInfo p {
+	margin: 0;
+}
+.mobileMenu {
+	display: none;
+}
+.mobileMenuOpened {
+	display: none;
+	position: absolute;
+	width: 100%;
+	background-color: #fff;
+	left: 0;
+	top: 0;
+}
+.mobileMenuHeader {
+	padding: 8px 0;
+	display: flex;
+	justify-content: flex-end;
+}
+.mobileMenuItems {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+.hero {
+	height: 1000px;
+	width: 100%;
+	background: url(../assets/bg-image.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.heroContainer {
+	width: 1920px;
+	height: 988px;
+	top: 15901px;
+	left: 7996px;
+	gap: 0px;
+	opacity: 0px;
+}
+
+.heroMainStroke {
+	margin: 0;
+	font-weight: 700px;
+	font-size: 70px;
+	line-height: 93.6px;
+	letter-spacing: 1px;
+
+	width: 577px;
+	height: 188px;
+	top: 16121px;
+	left: 8341px;
+	gap: 0px;
+	opacity: 0px;
+}
+
+.heroStroke {
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 30px;
+	text-align: left;
+	color: #ffffff;
+
+	width: 595px;
+	height: 90px;
+	top: 16333px;
+	left: 8341px;
+	gap: 0px;
+	opacity: 0px;
+}
+
+.heroBtns {
+	width: Hug (526px) px;
+	height: Hug (52px) px;
+	top: 16484px;
+	left: 8339px;
+	gap: 24px;
+	opacity: 0px;
+}
+
+.values {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 120px;
+}
+
+.formTitle {
+	font-weight: bold;
+	font-size: 28px;
+}
+
+.formWrapper {
+	width: 100%;
+	padding-top: 120px;
+	background: linear-gradient(grey 80%, lightgray 80%);
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: white;
+	padding: 48px 60px;
+}
+
+.formData {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.formInput {
+	display: flex;
+	flex-direction: column;
+}
+
+.formInput input {
+	padding: 12px 16px;
+}
+
+.services {
+	padding-top: 120px;
+	padding-bottom: 80px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: lightgray;
+}
+
+.servicesTitle {
+	font-size: 46px;
+	font-weight: bold;
+	margin: 0;
+	margin-bottom: 24px;
+}
+
+.servicesSubtitle {
+	font-size: 18px;
+	color: #787a80;
+	margin: 0;
+	margin-bottom: 60px;
+}
+
+.servicesItems {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.servicesItem {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid;
+	width: 285px;
+	height: 285px;
+	background-color: white;
+	transition: background-color 5s ease;
+}
+.servicesItem:hover {
+	background-color: orange;
+	transition: background-color 5s ease;
+}
+
+.servicesMore {
+	display: flex;
+	gap: 40px;
+	margin-top: 60px;
+	font-size: 28px;
+	font-weight: bold;
+	align-items: center;
+}
+.servicesBtn {
+	padding: 20px 40px;
+	height: 62px;
+	font-size: 18px;
+	background-color: orange;
+	color: white;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: background-color 0.5s ease;
+}
+
+.servicesBtn:hover {
+	background-color: brown;
+	transition: background-color 0.5s ease;
+}
+
+.servicesBtn:active {
+	background-color: yellow;
+}
+
+@media (max-width: 750px) {
+	.container {
+		padding: 0 15px;
+		width: unset;
+	}
+	.navbar {
+		display: none;
+	}
+	.contacts {
+		display: none;
+	}
+	.formData {
+		flex-direction: column;
+	}
+	.servicesItems {
+		flex-direction: column;
+	}
+	.headerWrapper {
+		padding: 8px 0;
+	}
+	.mobileMenu {
+		display: block;
+	}
+}
